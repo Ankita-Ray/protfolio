@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+:root {
+  --text-color: #124a63;
+  --text-color-secondary: #b3c5cd;
+
+  --primary-color: #21b6b7;
+
+  --background-color: #f9f9f9;
+  --background-color-dark: #eef3f6;
+  --background-color-light: white;
+
+  --font-family: "Poppins", sans-serif;
+  --box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+  --text-color: #f0f0f0;
+  --text-color-secondary: #b3c5cd;
+
+  --primary-color: #21b6b7;
+
+  --background-color: #252329;
+  --background-color-dark: #3c393f;
+  --background-color-light: #120f13;
+}
+
+html,
+body {
+  padding: 0;
+  /* padding-top: 20px; */
+  margin: 0;
+  font-family: var(--font-family);
+  color: var(--text-color);
+}
+
+.container {
+  background-color: linear-gradient(rgb(2, 47, 92), #111);
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+}
+
+#back {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+#back {
+  animation: back_anim 2s linear;
+}
+
+@keyframes back_anim {
+  from {
+    transform: translateY(-100vh);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+#left {
+  animation: anim 1s linear;
+  animation-delay: 0s;
+}
+#right {
+  animation: anim 1s linear;
+  animation-delay: 0s;
+}
+
+@keyframes anim {
+  from {
+    transform: translateY(-100vh);
+    display: none;
+  }
+  to {
+    transform: translateY(0px);
+    display: block;
+  }
+}
+
+tspan {
+  white-space: pre;
+}
+.shp0 {
+  fill: #3f3d56;
+}
+.shp1 {
+  fill: #6c63ff;
+}
+.shp2 {
+  fill: url(#grd1);
+}
+.shp3 {
+  display: none;
+  fill: #3f3d56;
+}
+.shp4 {
+  fill: #e7effd;
+}
+.shp5 {
+  opacity: 0.302;
+  fill: #000000;
+}
+.shp6 {
+  opacity: 0.4;
+  fill: #000000;
+}
+.shp7 {
+  fill: #d4dfec;
+}
